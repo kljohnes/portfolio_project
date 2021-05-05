@@ -1,0 +1,84 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: gray;
+    color: white;
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+#masthead {
+    background-image: url("./assets/background6.jpg");
+    background-repeat: no-repeat;
+    background-color:#ff8080;
+    padding: 100px;
+    height: 500px;
+}
+
+#masthead h1{
+    margin-left: 425px;
+}
+
+#masthead h2 {
+    margin-left: 425px;
+}
+
+h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 100px;
+}
+
+#project {
+    display: grid;
+}
+
+#projects {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.card {
+    color: gray;
+    margin: 10px;
+}
+
+.card img {
+    width: auto;
+    height: 50%;
+}
+
+a.nav-link{
+    color: gray;
+    font-size: 20px;
+}
+
+a.navbar-brand{
+    color: gray;
+}
+
+fieldset {
+    display: grid;
+    
+    width: 800px;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+}
+
+#contact {
+    margin-bottom: 50px;
+}
+
+#linkedin {
+    height: 80px;
+    padding: 10px;
+}
