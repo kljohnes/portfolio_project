@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cormorant+Garamond:wght@300&family=Itim&display=swap"
@@ -18,107 +18,119 @@
 </head>
 
 <body>
-    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-        <a class="navbar-brand" href="#">Katherine Fancher-Johnes</a>
+    <nav id="navbar-example2" class="navbar navbar sticky-top navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#masthead">Katherine Fancher-Johnes</a>
         <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link" href="#fat">About Me</a>
+                <a class="nav-link" href="#about">About Me</a>
             </li>
-            <li class="nav-item drop-down">  
-               <a class="nav-link" href="#projects">Projects</a>  
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#projects" role="button"
+                    aria-expanded="false">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#gold-badge">Gold Badge</a></li>
+                    <li><a class="dropdown-item" href="#blue-badge">Blue Badge</a></li>
+                    <li><a class="dropdown-item" href="#blue-badge">Red Badge</a></li>
+                </ul>
+            </li>
             <li class="nav-item">
-                <a class="nav-link" href="#mdo">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#other-platforms">Other Platforms</a>
             </li>
         </ul>
     </nav>
-   
     <div class="container-fluid" id="masthead">
-        <h1>Katherine Fancher-Johnes</h1>
-        <h2>Web Developer In Training</h2>
-    </div>
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
-        <div class="container-fluid">
-
-            <h4 id="fat">About Me</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum facere modi commodi odio sint ipsa
-                obcaecati nesciunt molestiae minima tempora quas ab quod, enim nulla magni corrupti aperiam tempore
-                nemo.</p>
+            <h1>Katherine Fancher-Johnes</h1>
+            <h2>Web Developer In Training</h2>
+            <br>
+            <br>
+            <h2 class="fade-in">Welcome!</h2>
         </div>
-        <div id="projects">
-        <h4>Projects</h4>
-        <h2>Gold Badge Projects</h2>
-
+    <div class="container-fluid">
+            <h4 id="about">About Me</h4>
+            <p id="about-text">After graduating from Butler University, I went to work in the financial services industry. While I enjoy what I do, I love learning new things and stepping outside my comfort zone. Recently, I made the decision to enroll in Eleven Fifty Academy's Web Development program and I am gaining skills and knowledge every day. I'm learning that there are nearly limitless possibilities when it comes to what can be accomplished through web development. I aim to create websites that are simple, beautiful, and functional, and my hope is that my projects will make someone's life a little easier or day a little better. In that way I seek to make a positive impact through my work.</p>
+            <button><a target="blank" href = "./assets/resume.pdf">View My Resume</a></button>
         </div>
-        <div class="card-group">
-            <div class="card"><a href="https://codepen.io/kljohnes/pen/abpveLw"></a>
-                <img src="./assets/CSS_Creature.PNG" class="card-img-top" alt="...">
+        <div class="container-fluid" id="projects">
+            <h4>Projects</h4>
+            <div class="gold-badge"><h3 id = "gold-badge">Gold Badge Projects</h3>
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="row">
+            <div class="col-sm"><a target=blank href="https://codepen.io/kljohnes/pen/abpveLw">
+                <img src="./assets/CSS_Creature.PNG" class="card-img-top" alt="CSS Caterpillar"></a>
                 <div class="card-body">
                     <h5 class="card-title">CSS Creature</h5>
-                    <p class="card-text">A caterpillar made using HTML and CSS</p>
-                    <p class="card-text"><small class="text-muted"><a
-                                href="https://codepen.io/kljohnes/pen/abpveLw">Visit Codepen</a></small></p>
+                    <p class="card-text">A caterpillar made using HTML and CSS.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="./assets/Static_Layout.PNG" class="card-img-top" alt="...">
+            <div class="col-sm"><a target=blank href="https://kljohnes.github.io/static_website_project/">
+                <img src="./assets/Static_Layout.PNG" class="card-img-top" alt="Hulu Static Website"></a>
                 <div class="card-body">
                     <h5 class="card-title">Static Layout</h5>
-                    <p class="card-text">A mock-up of the Hulu website created using HTML and CSS
+                    <p class="card-text">A mock-up of the Hulu website created using HTML and CSS.
                     </p>
-                    <p class="card-text"><small class="text-muted"><a href="https://kljohnes.github.io/static_website_project/">Visit Website</a></small></p>
+                   
                 </div>
             </div>
-            <div class="card">
-                <img src="./assets/API_1.PNG" class="card-img-top" alt="...">
+            </div>
+            <br>
+            <div class="row">
+            <div class="col-sm"><a target="blank" href="https://kljohnes.github.io/api_project_1/">
+                <img src="./assets/API_1.PNG" class="card-img-top" alt="Pokedex"></a>
                 <div class="card-body">
                     <h5 class="card-title">Pokedex</h5>
-                    <p class="card-text">A simple Pokedex that uses Javascript to fetch data from the Pokemon API </p>
-                    <p class="card-text"><small class="text-muted"><a href="https://kljohnes.github.io/api_project_1/">Visit Website</a></small></p>
+                    <p class="card-text">First API Project - A Pokedex that uses Javascript to fetch data from the Pokemon API and display key information about each Pokemon.</p>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="./assets/API_1.PNG" class="card-img-top" alt="...">
+            <div class="col-sm"><a target=blank href="https://mars-rover-photo-search.firebaseapp.com/">
+                <img src="./assets/API2.PNG" class="card-img-top" alt="Mars Rover Photo Search"></a>
                 <div class="card-body">
                     <h5 class="card-title">Mars Rover Photo Search</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal height
-                        action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text">Second API Project - A search app that allows a user to search NASA's API for photos taken by the Mars rovers. The search can be filtered by date and rover name.</p>
+                   
                 </div>
             </div>
+            </div>
         </div>
-
-
+        </div>
+        <div id="blue-badge">
+            <h3>Blue Badge and Red Badge projects coming soon!</h3>
+        </div>
+        <div class="container-fluid" id="contact">
+            <h4>Contact</h4>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqvepbl"
+                method="post">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="container-fluid" id="other-platforms">
+            <h4>Other Platforms</h4><a href="https://github.com/kljohnes"><img src="./assets/GitHub-Mark-64px.png"></a>
+            <a href="https://linkedin.com/in/katherine-fancher-johnes-2b9658207"><img id="linkedin"
+                    src="./assets/LI-In-Bug.png"></a>
+        </div>
     </div>
     </div>
-    <div><p>Blue Badge and Red Badge projects coming soon!</p></div>
 
-    <h4 id="mdo">Contact</h4>
-    <div class="container" id="contact">
-    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqvepbl" method="post">
-        <fieldset id="fs-frm-inputs">
-          <label for="full-name">Full Name</label>
-          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-          <label for="email-address">Email Address</label>
-          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-          <label for="message">Message</label>
-          <textarea rows="5" name="message" id="message" required=""></textarea>
-          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-        </fieldset>
-        <input type="submit" value="Submit">
-      </form>
-      </div>
-
-
-    </div>
-    <div><a href ="https://github.com/kljohnes"><img src="./assets/GitHub-Mark-64px.png"></a>
-    <a href ="https://linkedin.com/in/katherine-fancher-johnes-2b9658207"><img id="linkedin" src="./assets/LI-In-Bug.png"></a>
-    </div>
-
+    <footer>Katherine Fancher-Johnes ~ 2021</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
