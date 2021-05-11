@@ -59,15 +59,7 @@ h5 {
   font-style: italic;
   font-size: 40px;
   font-weight: 600;
-  /* margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 8s steps(60, end); 
-}
 
-@keyframes type{ 
-  from { width: 0; }  */
  
 } 
 
@@ -119,8 +111,9 @@ a.navbar-brand{
 
 fieldset {
     display: grid;
-    width: 800px;
-}
+    width: 300px;
+    
+ }
 
 form {
     display: grid;
@@ -164,14 +157,14 @@ button a {
 
 #welcome {
   font-weight: 600;
-  margin: 0 auto;
+  /* margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
   width: 30em;
-  animation: type 8s steps(60, end); 
+  animation: type 8s steps(60, end);  */
 }
-
+/* 
 @keyframes type{ 
   from { width: 0; } 
 
-}
+} */
