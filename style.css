@@ -141,13 +141,14 @@ footer {
 }
 
 button {
+    background-color: #ff8080;
     border-radius: 5px;
     padding: 10px;
 
 }
 
 button:hover {
-    background-color: #ff8080;
+    background-color: white;
 }
 
 button a {
