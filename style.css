@@ -19,7 +19,7 @@ body {
 }
 h1 {
     font-family: 'lobster two', cursive;
-    margin-top: 50px;
+    /* margin-top: 200px; */
     font-size: 80px;
 }
 
@@ -51,6 +51,9 @@ h5 {
     padding-top: 50px;
     text-align: center;
     color: white;
+    height: 750px;
+    display: grid;
+    align-content: center;
 } 
 
 #title {
@@ -58,28 +61,26 @@ h5 {
   text-align: center;
   font-style: italic;
   font-size: 40px;
-  font-weight: 600;
-
- 
+  font-weight: 600; 
 } 
 
 
 
 .logos {
   display: flex;
-  justify-content: space-evenly;
-
+  justify-content: space-around;
+ 
 }
 
 #logo {
   height: 80px;
   width: 80px;
-
 }
 
 hr {
   border: 10px solid white;;
 }
+
 .card-img-top{
     border: 2px solid white;
     border-radius: 5px;
@@ -111,9 +112,12 @@ a.navbar-brand{
 
 fieldset {
     display: grid;
-    width: 300px;
+    width: 70vw;
+    font-size: 20px;
+    font-weight: 500;
     
  }
+
 
 form {
     display: grid;
@@ -143,31 +147,22 @@ footer {
 }
 
 button {
-    background-color: #ff8080;
+    background-color: #39ac73;
     border-radius: 5px;
     padding: 10px;
 
 }
 
 button:hover {
-    background-color: white;
+    background-color: #133926;
 }
 
 button a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #welcome {
   font-weight: 600;
-  /* margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 8s steps(60, end);  */
-}
-/* 
-@keyframes type{ 
-  from { width: 0; } 
 
-} */
+}
